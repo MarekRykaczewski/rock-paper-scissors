@@ -6,24 +6,24 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
 if (playerSelection == computerSelection) {
-    console.log ("You draw")
+    return ("You draw")
 } else if (playerSelection == "paper") {
     if (computerSelection == "rock") {
-        console.log("You Win!")
+        return ("You Win!")
     } else {
-        console.log ("You lose!")
+        return ("You lose!")
     }
 } else if (playerSelection == "rock") {
     if (computerSelection == "scissors") {
-        console.log ("You win!")
+        return ("You win!")
     } else {
-        console.log ("You lose!")
+        return ("You lose!")
     }
 } else if (playerSelection == "scissors") {
     if (computerSelection == "paper") {
-        console.log("You win!") 
+        return("You win!") 
     } else {
-        console.log ("You lose!")
+        return ("You lose!")
     }
 
 } 
@@ -34,7 +34,7 @@ if (playerSelection == computerSelection) {
 for (let i = 0; i < 5; i++) {
 const playerSelection = prompt("Rock, paper or scissors?").toLocaleLowerCase();
 const computerSelection = computerPlay().toLowerCase();
+console.log("You picked: " + playerSelection)
+console.log("Computer picked: " + computerSelection)
 console.log(playRound(playerSelection, computerSelection))
-console.log(playerSelection)
-console.log(computerSelection)
 }
