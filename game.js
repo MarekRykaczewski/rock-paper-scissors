@@ -1,5 +1,5 @@
 function computerPlay() {
-    const randomChoice = ["Paper","Rock","Scissors"]
+    const randomChoice = ["paper","rock","scissors"]
     const random = Math.floor(Math.random() * randomChoice.length);
     return(random, randomChoice[random])
 }
@@ -7,20 +7,20 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
 if (playerSelection == computerSelection) {
     console.log ("You draw")
-} else if (playerSelection == "Paper") {
-    if (computerSelection == "Rock") {
+} else if (playerSelection == "paper") {
+    if (computerSelection == "rock") {
         console.log("You Win!")
     } else {
         console.log ("You lose!")
     }
-} else if (playerSelection == "Rock") {
-    if (computerSelection == "Scissors") {
+} else if (playerSelection == "rock") {
+    if (computerSelection == "scissors") {
         console.log ("You win!")
     } else {
         console.log ("You lose!")
     }
-} else if (playerSelection == "Scissors") {
-    if (computerSelection == "Paper") {
+} else if (playerSelection == "scissors") {
+    if (computerSelection == "paper") {
         console.log("You win!") 
     } else {
         console.log ("You lose!")
@@ -30,7 +30,7 @@ if (playerSelection == computerSelection) {
 }
 
 const playerSelection = "Rock";
-const computerSelection = computerPlay();
+const computerSelection = computerPlay().toLowerCase();
 console.log(playRound(playerSelection, computerSelection))
 console.log(playerSelection)
 console.log(computerSelection)
