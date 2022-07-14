@@ -29,8 +29,12 @@ if (playerSelection == computerSelection) {
 } 
 }
 
-const playerSelection = "Rock";
+
+
+for (let i = 0; i < 5; i++) {
+const playerSelection = prompt("Rock, paper or scissors?").toLocaleLowerCase();
 const computerSelection = computerPlay().toLowerCase();
 console.log(playRound(playerSelection, computerSelection))
 console.log(playerSelection)
 console.log(computerSelection)
+}
