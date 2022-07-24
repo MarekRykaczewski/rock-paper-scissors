@@ -22,11 +22,19 @@ body {
 #playerOptions {
     width: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #rock, #paper, #scissors {
     width: 100px;
+    height: 100px;
+    transition: 0.3s
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+    width: 120px;
+    height: 120px;
+    transition: 0.3s
 }
 
 #results {

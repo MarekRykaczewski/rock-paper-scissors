@@ -59,11 +59,11 @@ function removeAllChildNodes(parent) {
 
 function checkIfWon() {
     if (playerScore === 5) {
-        console.log("Player won!")
+        alert("Player won!")
         gameReset()
 
     } else if (computerScore === 5) {
-        console.log("Computer won!")
+        alert("Computer won!")
         gameReset()
     }
 }
@@ -84,8 +84,8 @@ const rBtn = document.querySelector('#rock')
 
 rBtn.addEventListener('click', () => {
     playerSelection = 'rock'
-    createResult();
     computerPlay();
+    createResult();
     computerSelection = computerPlay().toLowerCase()
     overallScore.textContent = 'Score: ' + playerScore + '/' + computerScore;
 });
@@ -108,6 +108,7 @@ sBtn.addEventListener('click', () => {
     computerPlay();
     computerSelection = computerPlay().toLowerCase()
     overallScore.textContent = 'Score: ' + playerScore + '/' + computerScore;
+
 });
 
 
