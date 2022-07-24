@@ -41,12 +41,15 @@ function createResult() {
     newP.classList.add('newP');
     newP.textContent = playRound(playerSelection, computerSelection);
     resultsContainer.appendChild(newP);
-    checkIfWon()
+    setTimeout(function() {
+        checkIfWon()
+    }, 10)
 }
 
 function gameReset(){
     computerScore = 0;
     playerScore = 0;
+    overallScore.textContent = 'Score: ' + playerScore + '-' + computerScore;
     removeAllChildNodes(resultsContainer)
     resultsContainer.appendChild(overallScore);
 }
