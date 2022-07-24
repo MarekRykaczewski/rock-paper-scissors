@@ -77,7 +77,7 @@ const resultsContainer = document.querySelector('#results')
 
 const overallScore = document.createElement('p');
 overallScore.classList.add('overallScore')
-overallScore.textContent = 'Score: ' + playerScore + '/' + computerScore;
+overallScore.textContent = 'Score: ' + playerScore + '-' + computerScore;
 resultsContainer.appendChild(overallScore);
 
 const rBtn = document.querySelector('#rock')
@@ -87,7 +87,7 @@ rBtn.addEventListener('click', () => {
     computerPlay();
     createResult();
     computerSelection = computerPlay().toLowerCase()
-    overallScore.textContent = 'Score: ' + playerScore + '/' + computerScore;
+    overallScore.textContent = 'Score: ' + playerScore + '-' + computerScore;
 });
 
 const pBtn = document.querySelector('#paper')
@@ -97,7 +97,7 @@ pBtn.addEventListener('click', () => {
     createResult();
     computerPlay();
     computerSelection = computerPlay().toLowerCase()
-    overallScore.textContent = 'Score: ' + playerScore + '/' + computerScore;
+    overallScore.textContent = 'Score: ' + playerScore + '-' + computerScore;
 });
 
 const sBtn = document.querySelector('#scissors')
@@ -107,7 +107,7 @@ sBtn.addEventListener('click', () => {
     createResult();
     computerPlay();
     computerSelection = computerPlay().toLowerCase()
-    overallScore.textContent = 'Score: ' + playerScore + '/' + computerScore;
+    overallScore.textContent = 'Score: ' + playerScore + '-' + computerScore;
 
 });
 
