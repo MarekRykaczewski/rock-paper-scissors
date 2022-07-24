@@ -71,3 +71,12 @@ h1 {
     font-size: 40px;
     font-family: 'Nunito', sans-serif;
 }
+
+.newP {
+    animation: fadeIn 0.7s; }
+    
+    @keyframes fadeIn {
+        0% { opacity: 0;}
+        100% { opacity: 1;}
+        
+    }
