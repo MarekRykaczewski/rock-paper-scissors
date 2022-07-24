@@ -7,30 +7,30 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
 
 if (playerSelection == computerSelection) {
-    return ("You draw")
+    return (`You both picked ${playerSelection}. Draw!`)
 } else if (playerSelection == "paper") {
     if (computerSelection == "rock") {
         playerScore ++
-        return ("You win!")
+        return (`Your ${playerSelection} beats computer's ${computerSelection}. You win!`)
     } else {
         computerScore ++
-        return ("You lose!")
+        return (`Computer's ${computerSelection} beats your ${playerSelection}. You lose!`)
     }
 } else if (playerSelection == "rock") {
     if (computerSelection == "scissors") {
         playerScore ++
-        return ("You win!")
+        return (`Your ${playerSelection} beats computer's ${computerSelection}. You win!`)
     } else {
         computerScore ++
-        return ("You lose!")
+        return (`Computer's ${computerSelection} beats your ${playerSelection}. You lose!`)
     }
 } else if (playerSelection == "scissors") {
     if (computerSelection == "paper") {
         playerScore ++
-        return("You win!") 
+        return (`Your ${playerSelection} beats computer's ${computerSelection}. You win!`)
     } else {
         computerScore ++
-        return ("You lose!")
+        return (`Computer's ${computerSelection} beats your ${playerSelection}. You lose!`)
     }
 
 } 
